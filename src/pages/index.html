@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>shut up warren</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+</head>
+
+<body>
+    <button hx-get="/meme" hx-trigger="click" hx-target="#meme-container" hx-indicator="#loading" style="margin-bottom: 1rem;">new meme</button>
+    <div hx-get="/meme" hx-trigger="load" id="meme-container">
+        <h1>shut up warren</h1>
+    </div>
+    <footer>
+        <p>made with ❤️ by <a href="https://twitter.com/duncanthedev">duncan lutz</a></p>
+    </footer>
+</body>
+
+</html>
